@@ -24,8 +24,11 @@ app.get('/', (req, res) => {
     res.render('top.ejs');
 });
 
+app.get('/query', (req, res) => {
+    res.render('query.ejs');
+})
 
-app.post('/index', (req, res) => {
+app.post('/index/', (req, res) => {
     //フォームから送信された値をコンソールへ出力
     console.log(req.body.semester);
     console.log(req.body.dayOfTheWeek);

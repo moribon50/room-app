@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-header">
+            <h1>空き教室検索</h1>
+        </div>
+        <form method="post" action="/index">
+            <select class="styled-select" name="semester" required>
+                <option value="">学期を選択</option>
+                <option value="前期">前期</option>
+                <option value="後期">後期</option>
+            </select>
+
+            <select class="styled-select" name="dayOfTheWeek" required>
+                <option value="">曜日を選択</option>
+                <option value="月">月</option>
+                <option value="火">火</option>
+                <option value="水">水</option>
+                <option value="木">木</option>
+                <option value="金">金</option>
+                <option value="土">土</option>
+            </select>
+
+            <select class="styled-select" name="period" required>
+                <option value="">時限を選択</option>
+                <option value="1">1限</option>
+                <option value="2">2限</option>
+                <option value="3">3限</option>
+                <option value="4">4限</option>
+                <option value="5">5限</option>
+                <option value="6">6限</option>
+            </select>
+
+            <input class="styled-button" type="submit" value="検索">
+        </form>
+    </div>
+</body>
+</html>

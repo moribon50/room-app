@@ -7,28 +7,28 @@
     margin-top: 56px;
   }
   
-  .container-header {
+.container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
-  }
-  
-  .container-header h1 {
+}
+
+.container-header h1 {
     font-size: 24px;
-  }
+}
 
 
 
 
-  .styled-select {
+.styled-select {
     /* 👇デフォルトのスタイルを解除 */
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
     /* 👇スタイル */
     display: inline-block;
-    width: 30%; /* 幅 */
+    width: 20%; /* 幅 */
     margin: 1em 0; /* 前後の余白 */
     padding: 0.6em 1.5em 0.6em 0.5em; /* 文字周りの余白 */
     cursor: pointer; /* カーソルを指に */
@@ -45,13 +45,33 @@
     background-size: 5px 5px, 5px 5px;
     background-position: calc(100% - 15px) 50%, calc(100% - 10px) 50%;
     background-repeat: no-repeat;
-  }
-  /* フォーカス時 */
-  .styled-select:focus {
+}
+/* フォーカス時 */
+.styled-select:focus {
     outline: 0;
     border-color: #b0c5ff; /* 枠線の色を変更 */
-  }
-  /* IEでデフォルトの矢印を消す */
-  .styled-select::-ms-expand {
+}
+/* IEでデフォルトの矢印を消す */
+.styled-select::-ms-expand {
     display: none;
+}
+
+.styled-button {
+    display: inline-block;
+    width: 20%; /* 幅 */
+    margin: 1em 0; /* 前後の余白 */
+    padding: 0.6em 1em; /* 塗りの余白 */
+    cursor: pointer; /* カーソルを指に */
+    line-height: 1.4; /* 行高 */
+    font-size: 0.95em; /* フォントサイズ */
+    font-weight: 700; /* 太字に */
+    color: #FFF; /* テキストカラー */
+    border-radius: 4px; /* 角丸 */
+    background-color: #1aa1ff; /* 背景色 */
+    border: solid 1px #e1e8ef; /* 枠線 */
+    box-shadow: 0 3px 3px -2px rgba(3, 29, 41, 0.15); /* 影 */
+}
+
+.styled-button:hover {
+    background-color: #064fda; /* 背景色 */
   }
